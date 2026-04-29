@@ -1,1 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sigma Pi Creative Media – Oshkosh, WI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: #0a0a0f;
+      color: white;
+    }
+
+    /* NAVBAR */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 32px;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    nav a:hover {
+      color: #f5c14b;
+    }
+
+    /* SIGMA PI LOGO (PURE CSS) */
+    .spi-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      transform: scale(0.9);
+    }
+
+    .spi-triangle {
+      width: 60px;
+      height: 52px;
+      position: relative;
+      border-left: 2px solid white;
+      border-right: 2px solid white;
+      border-bottom: 2px solid white;
+      transform: rotate(180deg);
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      overflow: hidden;
+    }
+
+    .spi-stars span {
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      background: white;
+      border-radius: 50%;
+    }
+
+    .spi-stars span:nth-child(1) { top: 10%; left: 45%; }
+    .spi-stars span:nth-child(2) { top: 30%; left: 25%; }
+    .spi-stars span:nth-child(3) { top: 40%; left: 65%; }
+    .spi-stars span:nth-child(4) { top: 60%; left: 35%; }
+    .spi-stars span:nth-child(5) { top: 70%; left: 55%; }
+    .spi-stars span:nth-child(6) { top: 20%; left: 60%; }
+    .spi-stars span:nth-child(7) { top: 50%; left: 15%; }
+    .spi-stars span:nth-child(8) { top: 55%; left: 80%; }
+    .spi-stars span:nth-child(9) { top: 75%; left: 25%; }
+    .spi-stars span:nth-child(10){ top: 85%; left: 50%; }
+
+    .spi-bars {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .spi-bars .bar {
+      width: 40px;
+      height: 3px;
+      background: white;
+    }
+
+    .spi-bars .plus {
+      background: none;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 0;
+    }
+
+    .spi-text {
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 120px 32px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #cccccc;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 80px 32px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    .package {
+      background: #11111a;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* CONTACT FORM */
+    form {
+      display: grid;
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    input, textarea, select {
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #333;
+      background: #0f0f16;
+      color: white;
+    }
+
+    button {
+      padding: 14px;
+      background: #f5c14b;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ffdd8a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="spi-logo">
+      <div class="spi-triangle">
+        <div class="spi-stars">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+      <div class="spi-bars">
+        <div class="bar"></div>
+        <div class="bar plus">+</div>
+        <div class="bar"></div>
+      </div>
+      <div class="spi-text">SIGMA PI</div>
+    </div>
+
+    <div>
+      <a href="#services">SERVICES</a>
+      <a href="#about">ABOUT</a>
+      <a href="#contact">CONTACT</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Street‑Level Content That Actually Performs</h1>
+    <p>UGC + street interviews for small businesses in Oshkosh, created by Sigma Pi fraternity members at UW Oshkosh.</p>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>Services</h2>
+
+    <div class="package">
+      <h3>Starter UGC Package — $150–$250</h3>
+      <p>1 short‑form UGC video, basic editing, organic usage rights.</p>
+    </div>
+
+    <div class="package">
+      <h3>Growth Package — $300–$600</h3>
+      <p>2–3 UGC videos + 1 street interview. Captions + branding.</p>
+    </div>
+
+    <div class="package">
+      <h3>Premium Campaign — $750–$1,500</h3>
+      <p>Full content stack: 3–5 UGC videos + 2 street interviews.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Sigma Pi · Gamma‑Mu Chapter</h2>
+    <p>Sigma Pi is a national fraternity founded in 1897. The Gamma‑Mu Chapter at UW Oshkosh is active in leadership, service, and campus involvement.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Request a Quote</h2>
+
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="text" placeholder="Business Name" />
+      <select>
+        <option>Select Service</option>
+        <option>Starter UGC</option>
+        <option>Growth Package</option>
+        <option>Premium Campaign</option>
+      </select>
+      <textarea placeholder="Tell us about your project"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2026 Sigma Pi Creative Media · UW Oshkosh
+  </footer>
+
+</body>
+</html>
 
